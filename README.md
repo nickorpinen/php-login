@@ -1,0 +1,2 @@
+# A gentle introduction to PHP, MySQL, and Bootstrap.
+The main goal of this project (C440) is to get familiar with web development tools. The code base, originally by Digamber, will change overtime as I continue to familiarize myself with the languages and its interactions.
