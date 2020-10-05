@@ -1,3 +1,4 @@
+<?php include('/var/www/html/php-login/controllers/login.php'); ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -18,6 +19,8 @@
 		<div class="inner-block">
                     <form action="" method="post">
 			<h3>Login</h3>
+			<?php echo $emptyUserError; ?>
+			<?php echo $emptyPwError; ?>
 			<div class="form-group">
                             <label>Username</label>
                             <input type="Username" class="form-control" name="username_signin" id="username_signin" />

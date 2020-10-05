@@ -21,7 +21,7 @@
                 <form action="" method="post">
                     <h3>Register</h3>
 		    <?php echo $successMsg; ?>
-		    <?php echo $emailExists; ?>
+		    <?php echo $accountExists; ?>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" class="form-control" name="email" id="email" />

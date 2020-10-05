@@ -4,10 +4,10 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-$hostname='localhost';
+$hostname='';
 $username='';
 $password='';
-$dbname='test';
+$dbname='';
 
 $connection = mysqli_connect($hostname, $username, $password, $dbname) or die("Database connection not established.")
 ?>
