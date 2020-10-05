@@ -7,12 +7,12 @@ global $wrongPwError, $nonExistingAccError, $userPwError, $emptyUserError, $empt
 if(isset($_POST['login'])){
     if((!empty($_POST['username_signin'])) && !empty($_POST['password_signin'])) {
 	if($stmt = $connection -> prepare('SELECT password FROM user WHERE username = ?')){
-	    echo "hello";
+	 
 	    $stmt -> bind_param('s', $_POST['username_signin']);
 	    $stmt -> execute();
 	    $stmt -> store_result();
 	    if($stmt->num_rows>0){
-		echo "therE";
+		
 		$stmt -> bind_result($password);
 		$stmt -> fetch();
 		if(password_verify($_POST['password_signin'], $password)){

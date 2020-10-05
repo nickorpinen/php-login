@@ -19,7 +19,7 @@ if(isset($_POST["signup"])){
 	</div>';
 	}
 	if(preg_match('/[A-Za-z0-9]+/', $_POST['password'])==0) {
-	    $_unameError = '<div class = "alert alert-danger">
+	    $pwError = '<div class = "alert alert-danger">
 	Only letters and numbers are allowed.
 	</div>';
 	}
@@ -44,10 +44,9 @@ if(isset($_POST["signup"])){
 		    }
 		}
 		$stmt -> close();
-	    } else {
-		echo "something is terribly wrong";
 	    }
-	} else {
+	}
+    }else {
 	    if(empty($_POST['email'])) {
 		$emailEmptyError = '<div class="alert alert-danger">
                      Email can not be blank.
@@ -63,7 +62,6 @@ if(isset($_POST["signup"])){
 	    Password cannot be blank.
 					   </div>';
 	    }
-	}
     }
     $connection->close();
 }
