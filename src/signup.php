@@ -20,22 +20,26 @@
             <div class="inner-block">
                 <form action="" method="post">
                     <h3>Register</h3>
+		    <?php echo $successMsg; ?>
 		    <?php echo $emailExists; ?>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" class="form-control" name="email" id="email" />
+			<?php echo $_emailError; ?>
 			<?php echo $emailEmptyError; ?>
                     </div>
 
 		    <div class="form-group">
                         <label>Username</label>
                         <input type="Username" class="form-control" name="username" id="username" />
+			<?php echo $_unameError; ?>
 			<?php echo $unameEmptyError; ?> 
 		    </div>
 		    
                     <div class="form-group">
                         <label>Password</label>
                         <input type="password" class="form-control" name="password" id="password" />
+			<?php echo $pwError; ?>
 			<?php echo $pwEmptyError;  ?>
                     </div>
 
