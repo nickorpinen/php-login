@@ -21,8 +21,8 @@
                 <div class="card-body">
                     <h5 class="card-title text-center mb-4">User Profile</h5>
                     <p class="card-text">Username: <?php echo $_SESSION['username']; ?></p>
-                    
-                    <a class="btn btn-danger btn-block" href="/var/www/html/php-login/logout.php">Log out</a>
+                    <a class="btn btn-danger btn-block" href="">Initialize Database</a>
+                    <a class="btn btn-danger btn-block" href="/php-login/logout.php">Log out</a>
                 </div>
             </div>
         </div>
